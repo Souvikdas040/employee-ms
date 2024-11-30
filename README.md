@@ -63,27 +63,76 @@ The Employee Management System (Employee MS) is a web application designed to st
 ```plaintext
 frontend/
   |-- src/
-      |-- components/
-          |-- dashboard/
-          |-- departments/
-          |-- employee/
-          |-- EmployeeDashboard/
-          |-- leave/
-          |-- salary/
-      |-- pages/
-      |-- utils/
-      App.jsx
+  |    |-- components/
+  |    |   |-- dashboard/
+  |    |   |   |-- AdminSidebar.jsx
+  |    |   |   |-- AdminSummary.jsx
+  |    |   |   |-- Navbar.jsx
+  |    |   |   |-- SummaryCard.jsx
+  |    |   |-- departments/
+  |    |   |   |-- AddDepartment.jsx
+  |    |   |   |-- DepartmentList.jsx
+  |    |   |   |-- EditDepartment.jsx
+  |    |   |-- employee/
+  |    |   |   |-- Add.jsx
+  |    |   |   |-- Edit.jsx
+  |    |   |   |-- List.jsx
+  |    |   |   |-- View.jsx
+  |    |   |-- EmployeeDashboard/
+  |    |   |   |-- Setting.jsx
+  |    |   |   |-- Sidebar.jsx
+  |    |   |   |-- Summary.jsx
+  |    |   |-- leave/
+  |    |   |   |-- Add.jsx
+  |    |   |   |-- List.jsx
+  |    |   |   |-- Table.jsx
+  |    |   |-- salary/
+  |    |       |-- Add.jsx
+  |    |       |-- View.jsx
+  |    |-- context/
+  |    |   |-- authContext.jsx
+  |    |-- pages/
+  |    |   |-- AdminDashboard.jsx
+  |    |   |-- EmployeeDashboard.jsx
+  |    |   |-- Login.jsx
+  |    |-- utils/
+  |        |-- DepartmentHelper.jsx
+  |        |-- EmployeeHelper.jsx
+  |        |-- PrivateRoutes.jsx
+  |        |-- RoleBaseRoutes.jsx
+  |    App.jsx
 server/
   |-- controllers/
+  |    |-- authController.js
+  |    |-- dashboardController.js
+  |    |-- departmentController.js
+  |    |-- employeeController.js
+  |    |-- leaveController.js
+  |    |-- salaryController.js
+  |    |-- settingController.js
   |-- db/
+  |    |-- db.js
   |-- middleware/
+  |    |-- authMiddleware.js
   |-- models/
+  |    |-- Department.js
+  |    |-- Employee.js
+  |    |-- Leave.js
+  |    |-- Salary.js
+  |    |-- User.js
   |-- public/
-      |-- uploads/
+  |    |-- uploads/
   |-- routes/
-  .env
-  index.js
-  userSeed.js
+  |    |-- auth.js
+  |    |-- dashboard.js
+  |    |-- department.js
+  |    |-- employee.js
+  |    |-- leave.js
+  |    |-- salary.js
+  |    |-- seeting.js
+  |.env
+  |index.js
+  |userSeed.js
 ```
 
 ---
@@ -150,4 +199,4 @@ This project is licensed under the MIT License. Feel free to use, modify, and di
 For any queries or suggestions, please contact:
 - **Developer**: Souvik Das
 - **Email**: [souvikdas.aec@gmail.com](mailto:souvikdas.aec@gmail.com)
-- **GitHub**: [[github.com/your-username](https://github.com/Souvikdas040)
+- **GitHub**: [[github.com/Souvikdas040](https://github.com/Souvikdas040)
